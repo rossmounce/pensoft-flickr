@@ -7,8 +7,6 @@ Developed in bash & python with Beautiful Soup.
 
 # Running it
 
-* Run bash create_subfolders.sh first to create a subfolder for each html file (I would do this in the python script if I knew how!)
-* Iterate over each html file, applying the beautiful soup python script to each:
 ```
 bash html_create_subfolders.sh ; #creates a subfolder for each fulltext html article
 for i in *.html ; do python pensoft-get-figures.py $i ; done ;   #extracts the figure image links, bibliographic data and figure caption text
