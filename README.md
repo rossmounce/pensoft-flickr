@@ -5,6 +5,15 @@ An adaption of my workflow for BMC journals, which is posted at: https://github.
 
 Developed in bash & python with Beautiful Soup.
 
+
+# Get full-text HTML articles from ZooKeys that contain phylogenies
+
+wget -w 30 -i layout.txt
+
+mmv "*.htm" "#1.html"   # There is much inconsistency between articles as to the URL extension. Sometimes 'html' sometimes 'htm'
+
+
+
 # Running it
 
 ```
